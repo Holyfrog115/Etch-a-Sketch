@@ -9,3 +9,34 @@
 body {
     font-family: "Roboto Condensed", Oswald, Raleway, Arial;
 }
+
+header {
+    margin: 20px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    width: 70%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box {
+    flex: 0 0 6.25%;
+
+    aspect-ratio: 1;
+
+    border: 1px solid black;
+    margin-bottom: -1px; /* Shifts the next element up by 1px */
+    margin-right: -1px;  /* Shifts the next element left by 1px */
+}
