@@ -14,3 +14,11 @@ function createGridBox() {
         addBox();
     }
 }
+
+
+function main() {
+    createGridBox();
+}
+
+
+main();
