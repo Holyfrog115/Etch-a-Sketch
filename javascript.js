@@ -10,7 +10,7 @@ function addBox() {
 function createGridBox() {
     // Creates a grid of 16 boxes
 
-    for (let i = 0; i < 16; i++) {
+    for (let i = 0; i < 16 * 16; i++) {
         addBox();
     }
 }
