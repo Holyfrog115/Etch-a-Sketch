@@ -21,8 +21,25 @@ main {
     margin: 20px;
 }
 
+button {
+    padding: 1rem;
+    background-color: #FF5722;
+}
+
+button:hover {
+    background-color: #e64e1f;
+}
+
 h1 {
     text-align: center;
+}
+
+.optionsMenu {
+    border: 2px solid black;
+    width: 45%;
+    padding: 2rem;
+    margin: 20px;
+    background-color: #76ABAE;
 }
 
 .container {
