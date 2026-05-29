@@ -5,3 +5,12 @@ function addBox() {
 
     container.appendChild(box);
 }
+
+
+function createGridBox() {
+    // Creates a grid of 16 boxes
+
+    for (let i = 0; i < 16; i++) {
+        addBox();
+    }
+}
