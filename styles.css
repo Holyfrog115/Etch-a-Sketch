@@ -23,8 +23,14 @@ main {
     margin: 20px;
 }
 
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+
 button {
-    padding: 1rem;
+    flex: 1;
+    padding: 0.5rem 1rem;
     background-color: #FF5722;
 }
 
