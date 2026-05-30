@@ -27,6 +27,15 @@ function deleteGridBox() {
 }
 
 
+function resetButton() {
+    const resetBtn = document.querySelector("#reset");
+    resetBtn.addEventListener("click", (event) => {
+        deleteGridBox();
+        createGridBox();
+    });
+}
+
+
 function newGridButton() {
     const btn = document.querySelector('#newGrid');
     btn.addEventListener("click", (event) => {
@@ -45,6 +54,7 @@ function newGridButton() {
 function main() {
     createGridBox(16);
     newGridButton();
+    resetButton();
 }
 
 
