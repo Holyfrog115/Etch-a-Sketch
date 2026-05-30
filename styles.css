@@ -47,14 +47,13 @@ button:hover {
     width: 45%;
     flex-wrap: wrap;
     justify-content: center;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
 }
 
 .box {
-    flex: 0 0 6.25%;
-
     aspect-ratio: 1;
 
-    border: 1px solid black;
-    margin-bottom: -1px; /* Shifts the next element up by 1px */
-    margin-right: -1px;  /* Shifts the next element left by 1px */
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
 }
