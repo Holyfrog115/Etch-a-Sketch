@@ -5,7 +5,7 @@ function addBox(sideNumber) {
     box.addEventListener("mouseenter", (event) => {
         event.target.style.backgroundColor = "#303841";
     })
-    box.setAttribute("style", `flex: 0 0 ${(100/sideNumber).toFixed(2)}%;`)
+    box.setAttribute("style", `flex: 0 0 ${100/sideNumber}%;`)
 
     container.appendChild(box);
 }
