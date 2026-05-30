@@ -1,3 +1,5 @@
+let squaresNumber = 0;
+
 function addBox(sideNumber) {
     const container = document.querySelector(".container");
     const box = document.createElement("div");
@@ -28,7 +30,6 @@ function deleteGridBox() {
 function newGridButton() {
     const btn = document.querySelector('#newGrid');
     btn.addEventListener("click", (event) => {
-        let squaresNumber = 0;
         squaresNumber = +prompt("Number of sqares per side?");
         if (squaresNumber < 1 || squaresNumber > 100) {
             alert("You can choose from 1 up to 100 squares per side");
