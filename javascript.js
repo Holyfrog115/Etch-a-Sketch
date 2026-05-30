@@ -1,22 +1,22 @@
-let squaresNumber = 0;
+let squaresNumber = 16;
 
-function addBox(sideNumber) {
+function addBox() {
     const container = document.querySelector(".container");
     const box = document.createElement("div");
     box.classList.add("box");
     box.addEventListener("mouseenter", (event) => {
         event.target.style.backgroundColor = "#303841";
     })
-    box.setAttribute("style", `flex: 0 0 ${100/sideNumber}%;`)
+    box.setAttribute("style", `flex: 0 0 ${100/squaresNumber}%;`)
 
     container.appendChild(box);
 }
 
 
-function createGridBox(sideNumber) {
+function createGridBox() {
     // Creates a grid of 16 boxes
-    for (let i = 0; i < sideNumber * sideNumber; i++) {
-        addBox(sideNumber);
+    for (let i = 0; i < squaresNumber * squaresNumber; i++) {
+        addBox();
     }
 }
 
@@ -36,7 +36,7 @@ function newGridButton() {
         }
         else {
             deleteGridBox()
-            createGridBox(squaresNumber);
+            createGridBox();
         }
     });
 }
