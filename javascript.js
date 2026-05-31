@@ -1,11 +1,12 @@
 let squaresNumber = 16;
+let color = "#303841";
 
 function addBox() {
     const container = document.querySelector(".container");
     const box = document.createElement("div");
     box.classList.add("box");
     box.addEventListener("mouseenter", (event) => {
-        event.target.style.backgroundColor = "#303841";
+        event.target.style.backgroundColor = color;
     })
     box.setAttribute("style", `flex: 0 0 ${100/squaresNumber}%;`)
 
@@ -51,10 +52,30 @@ function newGridButton() {
 }
 
 
+function colorButtons() {
+    const colorsDiv = document.querySelector(".colors");
+    colorsDiv.addEventListener("click", (event) => {
+        if (event.target.id == "gray") {
+            color = "#303841";
+        }
+        else if (event.target.id == "red") {
+            color = "#FF0052";
+        }
+        else if (event.target.id == "green") {
+            color = "#00C68D";
+        }
+        else if (event.target.id == "blue") {
+            color = "#0055DA";
+        }
+    });
+}
+
+
 function main() {
     createGridBox(16);
     newGridButton();
     resetButton();
+    colorButtons();
 }
 
 
