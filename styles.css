@@ -81,6 +81,14 @@ button:hover {
     border-radius: 50%;
 }
 
+.gray {
+    background-color: #303841;
+}
+
+.white {
+    background-color: white;
+}
+
 .red {
     background-color: #FF0052;
 }
@@ -91,8 +99,4 @@ button:hover {
 
 .blue {
     background-color: #0055DA;
-}
-
-.gray {
-    background-color: #303841;
 }

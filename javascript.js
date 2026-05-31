@@ -58,6 +58,9 @@ function colorButtons() {
         if (event.target.id == "gray") {
             color = "#303841";
         }
+        else if (event.target.id == "white") {
+            color = "#ffffff";
+        }
         else if (event.target.id == "red") {
             color = "#FF0052";
         }
