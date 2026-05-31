@@ -64,15 +64,35 @@ button:hover {
     border-bottom: 1px solid black;
 }
 
+.colors {
+    display: flex;
+    gap: 10px;
+}
+
 .color {
     display: flex;
     flex-flow: column;
     gap: 5px;
 }
 
-.red {
+.colors-label {
     padding: 1rem;
-    background-color: red;
     border: 2px solid black;
     border-radius: 50%;
+}
+
+.red {
+    background-color: #FF0052;
+}
+
+.green {
+    background-color: #00C68D;
+}
+
+.blue {
+    background-color: #0055DA;
+}
+
+.gray {
+    background-color: #303841;
 }
