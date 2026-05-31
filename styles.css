@@ -23,7 +23,7 @@ main {
     margin: 20px;
 }
 
-.buttons {
+.options {
     display: flex;
     gap: 20px;
 }
