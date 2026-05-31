@@ -100,3 +100,9 @@ button:hover {
 .blue {
     background-color: #0055DA;
 }
+
+.draw-message {
+    align-self: center;
+    font-size: 14px;
+    max-width: 8rem;
+}
