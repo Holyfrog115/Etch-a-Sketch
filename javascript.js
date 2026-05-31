@@ -97,8 +97,11 @@ function drawKeyBind() {
     const body = document.querySelector("body");
     body.addEventListener("keyup", (event) => {
         if (event.key === "d" || event.key === "D") {
-            currentHoveredBox.style.backgroundColor = color;
             isDrawing = !isDrawing;
+
+            if (isDrawing && currentHoveredBox) {
+                currentHoveredBox.style.backgroundColor = color;
+            }
         }
     });
 }
