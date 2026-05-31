@@ -20,7 +20,7 @@ function gridHover() {
         if (event.target.classList.contains("box")) {
             currentHoveredBox = event.target;
             if (isDrawing) {
-                event.target.style.backgroundColor = color;
+                currentHoveredBox.style.backgroundColor = color;
             }
         }
     });
@@ -97,6 +97,7 @@ function drawKeyBind() {
     const body = document.querySelector("body");
     body.addEventListener("keyup", (event) => {
         if (event.key === "d" || event.key === "D") {
+            currentHoveredBox.style.backgroundColor = color;
             isDrawing = !isDrawing;
         }
     });
