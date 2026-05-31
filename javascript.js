@@ -1,19 +1,33 @@
 let squaresNumber = 16;
 let color = "#303841";
+let currentHoveredBox = null;
 let isDrawing = true;
 
 function addBox() {
     const container = document.querySelector(".container");
     const box = document.createElement("div");
     box.classList.add("box");
-    box.addEventListener("mouseenter", (event) => {
-        if (isDrawing) {
-            event.target.style.backgroundColor = color;
-        }
-    })
     box.setAttribute("style", `flex: 0 0 ${100/squaresNumber}%;`)
 
     container.appendChild(box);
+}
+
+
+function gridHover() {
+    const container = document.querySelector(".container");
+
+    container.addEventListener("mouseover", (event) => {
+        if (event.target.classList.contains("box")) {
+            currentHoveredBox = event.target;
+            if (isDrawing) {
+                event.target.style.backgroundColor = color;
+            }
+        }
+    });
+
+    container.addEventListener("mouseleave", (event) => {
+        currentHoveredBox = null;
+    });
 }
 
 
@@ -91,6 +105,7 @@ function drawKeyBind() {
 
 function main() {
     createGridBox(16);
+    gridHover();
     newGridButton();
     resetButton();
     colorButtons();
