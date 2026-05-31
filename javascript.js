@@ -1,12 +1,15 @@
 let squaresNumber = 16;
 let color = "#303841";
+let isDrawing = true;
 
 function addBox() {
     const container = document.querySelector(".container");
     const box = document.createElement("div");
     box.classList.add("box");
     box.addEventListener("mouseenter", (event) => {
-        event.target.style.backgroundColor = color;
+        if (isDrawing) {
+            event.target.style.backgroundColor = color;
+        }
     })
     box.setAttribute("style", `flex: 0 0 ${100/squaresNumber}%;`)
 
