@@ -77,11 +77,24 @@ function colorButtons() {
 }
 
 
+function drawKeyBind() {
+    // Listens to keyboard keys on whole html body and if
+    // key is "D" swaps isDrawing value
+    const body = document.querySelector("body");
+    body.addEventListener("keyup", (event) => {
+        if (event.key === "d" || event.key === "D") {
+            isDrawing = !isDrawing;
+        }
+    });
+}
+
+
 function main() {
     createGridBox(16);
     newGridButton();
     resetButton();
     colorButtons();
+    drawKeyBind();
 }
 
 
