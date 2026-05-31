@@ -63,3 +63,16 @@ button:hover {
     border-right: 1px solid black;
     border-bottom: 1px solid black;
 }
+
+.color {
+    display: flex;
+    flex-flow: column;
+    gap: 5px;
+}
+
+.red {
+    padding: 1rem;
+    background-color: red;
+    border: 2px solid black;
+    border-radius: 50%;
+}
